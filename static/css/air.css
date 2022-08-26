@@ -15,7 +15,7 @@
     color: azure;
 }
 .result{
-    margin-top: 20px ;
+    margin :4rem ;
     background-color: transparent !important;
     color: azure !important;
 }
@@ -58,12 +58,15 @@
 }
 
 .result .container h2 {
-    color: rgb(201, 201, 201);
+    color: rgb(201, 201, 201) !important;
     font-size: 50px;
 }
 
 .result .container span{
-    color: rgb(255, 162, 75);
+    color: rgb(255, 162, 75) !important;
+}
+.result .container p{
+    color: rgb(255, 162, 75) !important;
 }
 .banner .container form .inputBox input, select{
     height:3rem;
