@@ -44,13 +44,10 @@
                 </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="https://wosa.vercel.app">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('home') }}">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('home') }}">Blogs</a>
+                <a class="nav-link" href="https://wosa.vercel.app/#case-studies-section">Services</a>
               </li>
             </ul>
           </div>
@@ -58,18 +55,52 @@
       </nav>
     </header>
     <center>
+<<<<<<< Updated upstream
     <div class="result_page">
       <div class="container">
         <h2 class="font-weight-semibold"><span>AIR QUALITY</span> <br> INDEX</h2><br>
         <div id="chart1" class='chart1'></div>
+=======
+      <div class="result_page">
+        <div class="container">
+          <h2 class="font-weight-semibold"><span>AIR QUALITY</span> <br> INDEX</h2><br>
+          <div id="chart1" class='chart1'></div>
+>>>>>>> Stashed changes
           <br />
         </div>
         <p class="text"> AQI: {{ aqi }} </p>
         <p class="text"> Main Pollutant: {{ mp }}; Category: {{cat}} </p>
       </div>
+<<<<<<< Updated upstream
     </div>
+=======
+      </div>
+      <div class="sug_wrap">
+        <div class="sugg">
+          <h2>Step to reduce Air pollution : </h2>
+          <ul>
+            <li>Not to burn wood, leaves or any yard waste,Stop smoking especially indoor</li>
+            <li>Diesel vehicles are major source of particle pollution, it can be reduced by replacing older
+              engines with new engines</li>
+            <li>Walk, cycle or use public transport or share vehicle wherever possible
+              Pay attention to your maintenance of your vehicle to reduce particulate matter
+              Conserve energy by using solar energy, bio-gas, rainwater harvesting etc. to control
+              pollution from particulate matter</li>
+            <li>
+              Reduce the use of motorized vehicles by walking, biking, or using other means of transportation for close
+              destinations. Utilize carpools with others for locations where motorized vehicles are necessary.
+            </li>
+            <li>
+              Do not idle the car inside garage. Replacement of existing gas stove with electric stove;Installation of
+              ventilation hood over existing gas stove;
+            </li>
+          </ul>
+        </div>
+      </div>
+>>>>>>> Stashed changes
     </center>
   </section>
+ 
   <div class="content-wrapper">
     <div class="container">
 
@@ -84,17 +115,18 @@
     </div>
   </div>
 </body>
-  <script src="{{ url_for('static', filename='vendors/jquery/jquery.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='vendors/bootstrap/bootstrap.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='vendors/aos/js/aos.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/landingpage.js') }}"></script>
-  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
-  <script type='text/javascript'>
-    var graphs = {{graphJSON | safe}};
-    Plotly.plot('chart1',graphs,{
-                                 paper_bgcolor: 'rgba(0,0,0,0)',
-                                  plot_bgcolor: 'rgba(0,0,0,0)'});
-  </script>
+<script src="{{ url_for('static', filename='vendors/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/bootstrap/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/owl-carousel/js/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vendors/aos/js/aos.js') }}"></script>
+<script src="{{ url_for('static', filename='js/landingpage.js') }}"></script>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+<script type='text/javascript'>
+  var graphs = {{ graphJSON | safe}};
+  Plotly.plot('chart1', graphs, {
+    paper_bgcolor: 'rgba(0,0,0,0)',
+    plot_bgcolor: 'rgba(0,0,0,0)'
+  });
+</script>
 
 </html>
