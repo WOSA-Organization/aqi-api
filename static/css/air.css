@@ -14,6 +14,11 @@
     background-color: transparent !important;
     color: azure;
 }
+.result{
+    margin-top: 20px;
+    background-color: transparent !important;
+    color: azure;
+}
 .main{
     min-height: 100vh;
     background-image: linear-gradient(rgba(10, 70, 37, 0.445),rgba(4, 9, 30, 0.774)), url(https://i.pinimg.com/originals/21/f6/24/21f62453ce92003ba18cf9708d92551d.png);
