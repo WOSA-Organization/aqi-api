@@ -81,22 +81,21 @@
 }
 .result_page{
     margin: 3rem !important;
-<<<<<<< Updated upstream
-=======
+
     padding-bottom: 2rem !important;
->>>>>>> Stashed changes
+
 }
 .result_page .container h2{
     padding-top: 10px;
     color: rgb(201, 201, 201) !important;
     font-size: 50px;
 }
-<<<<<<< Updated upstream
+
 .result_page .container p{
     color: #fff !important;
     padding-bottom: 12px;
 }
-=======
+
 .result_page .container .text{
     color: #fff !important;
     padding-bottom: 12px;
@@ -135,4 +134,3 @@
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     width: 90%;
 }
->>>>>>> Stashed changes
